@@ -1,7 +1,7 @@
 
 ## Description
 
-These are the starter files for the Angular Routing course on Pluralsight 
+These are my modifications to the starter files for the Angular Routing course on Pluralsight 
 
 ## Installation
 
