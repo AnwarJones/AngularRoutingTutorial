@@ -19,6 +19,8 @@ var MessageComponent = /** @class */ (function () {
     }
     MessageComponent.prototype.close = function () {
         // Close the popup.
+        this.messageService.isDisplayed = false;
+        this.router.navigate([{ outlets: { popup: null } }]);
     };
     MessageComponent = __decorate([
         core_1.Component({

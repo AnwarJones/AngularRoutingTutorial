@@ -15,6 +15,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
 import { ProductModule } from './products/product.module';
 import { UserModule } from './user/user.module';
 import { MessageModule } from './messages/message.module';
+import { MessageComponent } from './messages/message.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,7 @@ import { MessageModule } from './messages/message.module';
   declarations: [
     AppComponent,
     WelcomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   bootstrap: [ AppComponent ]
 })

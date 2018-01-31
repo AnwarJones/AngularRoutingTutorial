@@ -26,8 +26,8 @@ var ProductListComponent = /** @class */ (function () {
     };
     ProductListComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.listFilter = this.route.snapshot.queryParams['filterBy'] || '';
-        this.showImage = this.route.snapshot.queryParams['showImage'] === 'true';
+        this.listFilter = this.route.snapshot.queryParamMap['filterBy'] || '';
+        this.showImage = this.route.snapshot.queryParamMap['showImage'] === 'true';
         this.productService.getProducts()
             .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
     };

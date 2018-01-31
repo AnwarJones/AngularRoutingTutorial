@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var MessageService = /** @class */ (function () {
     function MessageService() {
         this.messages = [];
+        this.isDisplayed = false;
     }
     MessageService.prototype.addMessage = function (message) {
         var currentDate = new Date();
