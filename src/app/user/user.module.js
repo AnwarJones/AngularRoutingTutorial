@@ -11,6 +11,7 @@ var router_1 = require("@angular/router");
 var login_component_1 = require("./login.component");
 var auth_service_1 = require("./auth.service");
 var shared_module_1 = require("../shared/shared.module");
+var auth_guard_service_1 = require("./auth-guard.service");
 var UserModule = /** @class */ (function () {
     function UserModule() {
     }
@@ -26,7 +27,8 @@ var UserModule = /** @class */ (function () {
                 login_component_1.LoginComponent
             ],
             providers: [
-                auth_service_1.AuthService
+                auth_service_1.AuthService,
+                auth_guard_service_1.AuthGuard
             ]
         })
     ], UserModule);
